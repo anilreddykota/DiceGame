@@ -29,8 +29,8 @@ function reload() {
   document.getElementById("player1score").innerHTML = player1;
   document.getElementById("player2score").innerHTML = player2;
   //random die
-  document.getElementById("demo1").src = "images/dice" + randomnum1 + ".png";
-  document.getElementById("demo2").src = "images/dice" + randomnum2 + ".png";
+  document.getElementById("demo1").src = "dice" + randomnum1 + ".png";
+  document.getElementById("demo2").src = "dice" + randomnum2 + ".png";
   // result time
   if(gamesplayed == totalgames ){
     
