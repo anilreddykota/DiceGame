@@ -6,36 +6,94 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
       rel="stylesheet">
-
-    <script src="script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous">
+    <script src="index.js"></script>
 
   </head>
   <body>
 
     <div class="container">
-      <h1 id="result">playagain</h1>
-      <h3>gamesplayed:</h3><p id="gamesplayed"></p>
-      <h3 id="player1names"></h3>
-      <p id="player1score"></p>
-      <h3 id="player2names"> </h3>
-      <p id="player2score"></p>
+      <h1 id="result" style="font-family: 'Lobster', cursive;">play again
+        &#128521;</h1>
+        <div><hr></div>
+      <div class="row">
 
-      <div class="dice">
-        <p id="player1name"></p>
-        <img class="img1" id="demo1" src>
+        <div class="col-lg-6">
+          <div class="col-lg-6">
+            <h3>gamesplayed:</h3><p id="gamesplayed"></p>
+          </div>
+          <div class="col-lg-6">
+            <h3 id="player1names"></h3>
+            <p id="player1score"></p>
+
+          </div>
+          <div class="col-lg-6">
+            <h3 id="player2names"> </h3>
+            <p id="player2score"></p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 text-center">
+
+          <div class="dice">
+            <p id="player1name"></p>
+            <img class="img1" id="demo1" src>
+          </div>
+
+          <div class="dice">
+            <p id="player2name"></p>
+            <img class="img2" id="demo2" src>
+          </div><br><br>
+          <div class="row">
+
+            <div class="col-sm-6">
+              <div class="column">
+                <div id="player1name"></div>
+                <div>
+                  <button onclick="reload1();" id="mybtn1" ><img 
+                    style="height: 2cm; width:2cm;" src="dice.gif" alt></button>
+                </div>
+                <div>
+                  <img style="height: 1cm; width:1cm;" src="source.gif" id="here1"></img>
+                </div>
+                
+                  
+
+              </div>
+              
+            </div>
+            <div class="col-sm-6">
+              <div class="column">
+                <div id="player2name"></div>
+                <div>
+        
+                  <button onclick="reload2();" id="mybtn2" > <img
+                    style="height: 2cm; width:2cm;" src="dice.gif" alt></button>
+                </div>
+                <div>
+                  <img style="height: 1cm; width:1cm;"  src="source.gif" id="here2"></img>
+                </div>
+                
+                 
+
+              </div>
+              
+            
+            </div>
+          </div>
+          <h3 id="mybtn"></h3>
+        </div>
       </div>
+    </body>
+    <button onclick="restart();" class="btn btn-outline-warning" id="restart" hidden="true">ReStart</button>
 
-      <div class="dice">
-        <p id="player2name"></p>
-        <img class="img2" id="demo2" src>
-      </div><br><br>
-      <button onclick="reload();" id="mybtn"> play again </button>
-    </div>
-
-  </body>
-  
-  <footer>
-    game developed by<a href="https://mecap.in/developer.html">anil reddy kota
-    </a>
-  </footer>
-</html>
+    <footer>
+      game developed by<a href="https://mecap.in/developer.html">anil reddy kota
+      </a>
+    </footer>
+  </html>
