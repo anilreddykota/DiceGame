@@ -14,7 +14,7 @@
     <script src="index.js"></script>
 
   </head>
-  <body>
+  <body onload="preset();">
 
     <div class="container">
       <h1 id="result" style="font-family: 'Lobster', cursive;">play again
@@ -53,7 +53,7 @@
 
             <div class="col-sm-6">
               <div class="column">
-                <div id="player1name"></div>
+                <div id="player1nameagain"></div>
                 <div>
                   <button onclick="reload1();" id="mybtn1" ><img 
                     style="height: 2cm; width:2cm;" src="dice.gif" alt></button>
@@ -69,7 +69,7 @@
             </div>
             <div class="col-sm-6">
               <div class="column">
-                <div id="player2name"></div>
+                <div id="player2nameagain"></div>
                 <div>
         
                   <button onclick="reload2();" id="mybtn2" > <img
@@ -92,8 +92,9 @@
     </body>
     <button onclick="restart();" class="btn btn-outline-warning" id="restart" hidden="true">ReStart</button>
 
-    <footer>
+    <foot>
+      <div><hr></div>
       game developed by<a href="https://mecap.in/developer.html">anil reddy kota
       </a>
-    </footer>
+    </foot>
   </html>
