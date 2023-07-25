@@ -1,7 +1,5 @@
 alert(
-  " this is version 2.0 ;                             instructions: " +
-    " 1. enter names of player1 N player2 and then total times you want to play  2. this game is available only in offline mode"
-);
+  " this is version 2.0 ; instructions: 1. enter names of player1 N player2 and then total times you want to play  2. this game is available only in offline mode");
 var player1name = prompt("enter player 1 name ");
 var player2name = prompt("enter player 2 name ");
 player1name = player1name.toUpperCase();
