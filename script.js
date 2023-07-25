@@ -39,15 +39,9 @@ function restart() {
   
 
 }
-function preset(){
-    document.getElementById("player1nameagain").innerHTML=player1name;
-    document.getElementById("player2nameagain").innerHTML=player2name;
-}
-
-preset();
-
-
 function reload1() {
+  document.getElementById("player1nameagain").innerHTML=player1name;
+  document.getElementById("player2nameagain").innerHTML=player2name;
   randomnum1 = Math.floor(Math.random() * (6 - 0)) + 1;
   document.getElementById("player1name").innerHTML = player1name;
   document.getElementById("player1names").innerHTML = player1name + " score:";
