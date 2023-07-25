@@ -44,7 +44,7 @@ function preset(){
     document.getElementById("player2nameagain").innerHTML=player2name;
 }
 
-
+preset();
 
 
 function reload1() {
