@@ -23,6 +23,9 @@ var matchesplayed =0;
 function restart() {
   randomnum1 = 0;  
   randomnum2 = 0;
+  player1 = 0;
+  player2 = 0;
+  gamesplayed = 0;
   document.getElementById("gamesplayed").innerHTML =
   gamesplayed + "/" + totalgames;
   document.getElementById("player1score").innerHTML = player1;
@@ -33,9 +36,7 @@ function restart() {
   document.getElementById("here1").hidden = false;
   matchesplayed= matchesplayed +1;
   document.getElementById("result").innerHTML = "play again  &#128521;";
-  player1 = 0;
-  player2 = 0;
-  gamesplayed = 0;
+  
   
 
 }
