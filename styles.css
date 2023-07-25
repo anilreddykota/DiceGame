@@ -3,11 +3,9 @@
   margin: auto;
   text-align: center;
 }
-
 .dice {
   text-align: center;
   display: inline-block;
-
 }
 @media screen and  (min-width: 768px) {
   h1{
@@ -27,24 +25,31 @@
 
 }
 
-body {
-  background-color: #393E46;
+.body {
+  background-color:#3385ff;
+}
+.bolded{
+   font-size: 4rem;
 }
 
 h1 {
   margin: 30px;
-  
-  font-size: 7rem;
+  font-size: 10rem;
+  color: #4ECCA3;
+}
+.hbolder {
+  margin: 30px;
+  font-size: 6rem;
   color: #4ECCA3;
 }
 
 p {
-  font-size: 4rem;
-  color: #4ECCA3;
+  font-size: 5rem;
+  color: #4dff4d;
   
 }
 h3{
-  font-size: 4rem;
+  font-size: 5rem;
   color: #ff6600;
   
 
@@ -62,7 +67,10 @@ foot{
 }
 button {
   font-size: 5rem;
+  
+
 }
+
 foot{
   position: relative;
   bottom: 0px;

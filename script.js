@@ -6,8 +6,8 @@ var player1name = prompt("enter player 1 name ");
 var player2name = prompt("enter player 2 name ");
 player1name = player1name.toUpperCase();
 player2name = player2name.toUpperCase();
-let totalgames = prompt("total games you want to play");
-alert("roll the dicee to start the game have fun  ");
+let totalgames = prompt("number of rounds you want to play");
+alert("roll the dicee to start the game have fun ");
 
 if (totalgames == "" || totalgames >= 50) {
   totalgames = 5;
@@ -37,7 +37,7 @@ function restart() {
   matchesplayed= matchesplayed +1;
   document.getElementById("result").innerHTML = "play again  &#128521;";
   
-  
+  document.getElementById("restart").hidden = true;
 
 }
 function reload1() {

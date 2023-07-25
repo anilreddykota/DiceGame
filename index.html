@@ -13,17 +13,17 @@
     <script src="script.js"></script>
 
   </head>
-  <body>
+  <body class="body">
 
-    <div class="container">
-      <h1 id="result" >play again
+    <div class="container-fluid">
+      <h1 id="result" class="text-center hbolder" >play again
         &#128521;</h1>
         <div><hr></div>
       <div class="row">
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 text-center">
           <div class="col-lg-6">
-            <h3>gamesplayed:</h3><p id="gamesplayed"></p>
+            <h3>rounds played</h3><p id="gamesplayed"></p>
           </div>
           <div class="col-lg-6">
             <h3 id="player1names"></h3>
@@ -52,13 +52,13 @@
 
             <div class="col-sm-6">
               <div class="column">
-                <div id="player1nameagain"></div>
+                <div id="player1nameagain" class="bolded"></div>
                 <div>
                   <button onclick="reload1();" id="mybtn1" ><img 
-                    style="height: 2cm; width:2cm;" src="dice.gif" alt></button>
+                    style="height: 4cm; width:4cm;" src="dice.gif" alt></button>
                 </div>
                 <div>
-                  <img style="height: 1cm; width:1cm;" src="source.gif" id="here1"></img>
+                  <img style="height: 2cm; width:2cm;" src="source.gif" id="here1"></img>
                 </div>
                 
                   
@@ -68,18 +68,15 @@
             </div>
             <div class="col-sm-6">
               <div class="column">
-                <div id="player2nameagain"></div>
+                <div id="player2nameagain" class="bolded"></div>
                 <div>
         
                   <button onclick="reload2();" id="mybtn2" > <img
-                    style="height: 2cm; width:2cm;" src="dice.gif" alt></button>
+                    style="height: 4cm; width:4cm;" src="dice.gif" alt></button>
                 </div>
                 <div>
-                  <img style="height: 1cm; width:1cm;"  src="source.gif" id="here2"></img>
+                  <img style="height: 2cm; width:2cm;"  src="source.gif" id="here2"></img>
                 </div>
-                
-                 
-
               </div>
               
             
@@ -88,12 +85,15 @@
           <h3 id="mybtn"></h3>
         </div>
       </div>
+       <div class="text-center">
+        <button onclick="restart();" class="btn btn-success text-center " id="restart" hidden="true"><i class="bolded">Restart</i></button>
+       </div>
     </body>
-    <button onclick="restart();" class="btn btn-outline-warning" id="restart" hidden="true">ReStart</button>
-
-    <foot>
+    <foot >
       <div><hr></div>
-      game developed by<a  style="text-decoration: none; color: brown" href="https://mecap.in/developer.html"> Anil Reddy Kota
+      <div class="text-center text-light">
+      Game developed by<a style="text-decoration: none; color: brown" href="https://mecap.in/developer.html"> Anil Reddy Kota
       </a>
+    </div>
     </foot>
   </html>
