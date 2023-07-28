@@ -26,6 +26,8 @@ function restart() {
   player1 = 0;
   player2 = 0;
   gamesplayed = 0;
+  var audio = new Audio("green.mp3");
+  audio.play();
   document.getElementById("gamesplayed").innerHTML =
   gamesplayed + "/" + totalgames;
   document.getElementById("player1score").innerHTML = player1;
@@ -41,6 +43,8 @@ function restart() {
 
 }
 function reload1() {
+  var audio = new Audio("yellow.mp3");
+  audio.play();
   document.getElementById("player1nameagain").innerHTML=player1name;
   document.getElementById("player2nameagain").innerHTML=player2name;
   randomnum1 = Math.floor(Math.random() * (6 - 0)) + 1;
@@ -58,6 +62,8 @@ function reload1() {
   document.getElementById("here2").hidden = false;
 }
 function reload2() {
+  var audio = new Audio("blue.mp3");
+  audio.play();
   randomnum2 = Math.floor(Math.random() * (6 - 0)) + 1;
   document.getElementById("demo2").src = "dice" + randomnum2 + ".png";
   document.getElementById("player2names").innerHTML = player2name + " score:";
@@ -69,14 +75,27 @@ function reload2() {
   document.getElementById("here2").hidden = true;
   document.getElementById("here1").hidden = false;
   if (gamesplayed == totalgames) {
+    var audio = new Audio("wrong.mp3");
     if (player1 > player2) {
         let lead= player1 - player2;
       result = player1name + " won the game with " + lead +"points";
+      
+      setTimeout(() => {
+        audio.play();
+      }, 1000)
     } else if (player1 == player2) {
       result = "game draw";
+    
+      setTimeout(() => {
+        audio.play();
+      }, 1500)
     } else {
         let lead= player2 - player1;
       result = player2name + " won the game with " + lead +"points";
+      
+      setTimeout(() => {
+        audio.play();
+      }, 1000)
     }
     
     document.getElementById("result").innerHTML = result;
@@ -91,3 +110,4 @@ function reload2() {
       " game over <br>" + "refresh page to start new game";
   }
 }
+
