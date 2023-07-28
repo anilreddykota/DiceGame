@@ -60,6 +60,8 @@ function reload1() {
   document.getElementById("mybtn2").disabled = false;
   document.getElementById("here1").hidden = true;
   document.getElementById("here2").hidden = false;
+  gameover();
+  
 }
 function reload2() {
   var audio = new Audio("blue.mp3");
@@ -74,6 +76,10 @@ function reload2() {
   document.getElementById("mybtn1").disabled = false;
   document.getElementById("here2").hidden = true;
   document.getElementById("here1").hidden = false;
+  gameover();
+  
+}
+function gameover(){
   if (gamesplayed == totalgames) {
     var audio = new Audio("wrong.mp3");
     if (player1 > player2) {
