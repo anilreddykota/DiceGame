@@ -45,8 +45,7 @@ function restart() {
 function reload1() {
   var audio = new Audio("yellow.mp3");
   audio.play();
-  document.getElementById("player1nameagain").innerHTML=player1name;
-  document.getElementById("player2nameagain").innerHTML=player2name;
+  displayplayernames();
   randomnum1 = Math.floor(Math.random() * (6 - 0)) + 1;
   document.getElementById("player1name").innerHTML = player1name;
   document.getElementById("player1names").innerHTML = player1name + " score:";
@@ -66,6 +65,7 @@ function reload1() {
 function reload2() {
   var audio = new Audio("blue.mp3");
   audio.play();
+  displayplayernames();
   randomnum2 = Math.floor(Math.random() * (6 - 0)) + 1;
   document.getElementById("demo2").src = "dice" + randomnum2 + ".png";
   document.getElementById("player2names").innerHTML = player2name + " score:";
@@ -113,7 +113,12 @@ function gameover(){
 
 
     document.getElementById("mybtn").innerHTML =
-      " game over <br>" + "refresh page to start new game";
+      " game over ! <br>" + "refresh page to start new game";
   }
+}
+function displayplayernames(){
+  document.getElementById("player1nameagain").innerHTML=player1name;
+  document.getElementById("player2nameagain").innerHTML=player2name;
+ 
 }
 
